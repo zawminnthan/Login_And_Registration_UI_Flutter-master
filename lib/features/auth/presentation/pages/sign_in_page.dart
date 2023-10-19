@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ui_one/features/auth/presentation/pages/admin_page.dart';
 import 'package:ui_one/features/auth/presentation/pages/app_widget.dart';
-import 'package:ui_one/features/auth/presentation/pages/home_page.dart';
+import 'package:ui_one/features/auth/presentation/pages/main_page.dart';
 import 'package:ui_one/features/auth/presentation/pages/search_page.dart';
 import 'package:ui_one/features/auth/presentation/validator/auth_validator.dart';
 import 'package:ui_one/service._locator.dart';
@@ -48,8 +48,8 @@ class _SignInPageState extends State<SignInPage> {
               width: 100,
               height: 50,
             ),
-            Column(
-              children: const [
+            const Column(
+              children: [
                 MyButton(
                   iconUrl: 'assets/images/ic_google.png',
                   text: "Log in with Google",
@@ -146,7 +146,7 @@ class _SignInPageState extends State<SignInPage> {
         AppWidget.loggedUser["email"] = emailController.text.trim();
         AppWidget.loggedUser["password"] = passwordController.text.trim();
         //Navigator.pushNamed(context, AdminPage.id);
-        Navigator.pushNamed(context, HomePage.id);
+        Navigator.pushNamed(context, MainPage.id);
       }
     }
   }

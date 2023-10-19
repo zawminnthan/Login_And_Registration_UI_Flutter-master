@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class SettingPage extends StatelessWidget {
+  const SettingPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
       body: Container(
         child: const Center(
           child: Text(
-            'Home',
+            'Setting',
             style: TextStyle(fontSize: 20),
           ),
         ),
